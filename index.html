@@ -14,50 +14,73 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand  text-white" href="#"><img src="assets/img/viajes.svg" alt="" width="50"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active  text-white" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-white" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-white" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled  text-white" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand  text-white" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active  text-white" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link  text-white" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link  text-white" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled  text-white" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
+
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
         </div>
       </div>
-    </nav>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
   </header>
 
   <main>
     <article class="container-fluid">
       <div class="row p-5 text-white">
         <h2 class="text-center mb-5">¿Quienes Somos?</h2>
-        <div class="col mx-5">
+        <div class="col-lg mx-lg-5 mb-4 mb-lg-0">
           <i class="fa-solid fa-plane fa-2x"></i>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam totam accusantium animi molestiae labore
+          <p class="justifytext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam totam accusantium animi molestiae labore
             magnam dolorum rerum. Dolorem quibusdam exercitationem nesciunt, dolores qui provident iusto ipsa asperiores
             laborum omnis sapiente deleniti, autem atque quas officia et obcaecati quasi doloremque aut. Tempore ratione
             facere nihil minima mollitia laborum quibusdam neque possimus deserunt harum alias sit expedita perspiciatis
             dicta quisquam, soluta ullam optio, molestiae ducimus fuga esse. Doloribus quas omnis eveniet laborum. <br>
-
           </p>
         </div>
-        <div class="col mx-5">
-          <p>
+        <div class="col-lg mx-lg-5 mb-4 mb-lg-0">
+          <p class="justifytext">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam velit esse nostrum aliquam unde mollitia est
             iste quo nam tempore quae, sit nulla ratione vitae minima error totam maxime iure explicabo consectetur.
             Nisi amet cumque a sunt doloremque magnam quaerat repudiandae deleniti, commodi molestiae non ipsa fugit
@@ -66,8 +89,8 @@
             <i class="fa-solid fa-person-hiking fa-2x"></i>
           </p>
         </div>
-        <div class="col mx-5">
-          <p>
+        <div class="col-lg mx-lg-5">
+          <p class="justifytext">
             <i class="fa-solid fa-route fa-2x"></i>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere perferendis ducimus laboriosam quaerat
             sapiente rem numquam, quisquam voluptatibus harum, optio laudantium dolore atque. Aliquam, quasi non.
@@ -79,50 +102,64 @@
         </div>
       </div>
     </article>
-
+    
 
 
     <article class="container-fluid">
-    
-    
-      <div class="row p-5 text-white">
+      <div class="row p-3 text-white justify-content-around pb-5">
         <h2 class="text-center mb-5">Destacados</h2>
-        <div class="col-md-3">
-          <div class="card">
+    
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card h-100">
+            <img src="assets/img/card1.jpg" class="card-img-top img-fit" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Columna 1</h5>
-              <p class="card-text">Content for Columna 1.</p>
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card">
+    
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card h-100">
+            <img src="assets/img/card2.jpg" class="card-img-top img-fit" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Columna 2</h5>
-              <p class="card-text">Content for Columna 2.</p>
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card">
+    
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card h-100">
+            <img src="assets/img/card3.jpg" class="card-img-top img-fit" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Columna 3</h5>
-              <p class="card-text">Content for Columna 3.</p>
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card">
+    
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card h-100">
+            <img src="assets/img/card4.jpg" class="card-img-top img-fit" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Columna 4</h5>
-              <p class="card-text">Content for Columna 4.</p>
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
         </div>
+    
       </div>
     </article>
     
+
+    
+
   </main>
+
+  <form>
+
+  </form>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
