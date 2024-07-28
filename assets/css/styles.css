@@ -1,8 +1,3 @@
-
-html{
-    scroll-behavior: smooth;
-}
-
 .justifytext{
     text-align: justify;
 }
@@ -13,7 +8,7 @@ html{
 
 .customicon i{
     width: 100%;
-    background-color: peru;
+    background-color: #39BEE4;
     padding: 5px;
     border-radius: 10px;
     text-align: center;
@@ -29,6 +24,11 @@ form{
     background-color: #1f1f1f;
 }
 
-label{
+label, .links{
+    color: #ffff;
+}
+
+#send ,footer{
+    background-color: #39BEE4;
     color: #ffff;
 }

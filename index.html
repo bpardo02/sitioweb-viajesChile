@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- CDN Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- CDN Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,7 +16,9 @@
   <title>Viajes Chile</title>
 </head>
 
+<!-- Seccion Principal -->
 <body>
+  <!-- Barra de navegacion -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand  text-white" href="#"><img src="assets/img/viajes.svg" alt="" width="50"></a>
@@ -40,7 +44,7 @@
       </div>
     </div>
   </nav>
-
+  <!-- Carousel -->
   <header>
 
     <div id="carouselExample" class="carousel slide">
@@ -67,8 +71,11 @@
 
   </header>
 
+  <!-- Contenido -->
   <main>
-    <article class="container-fluid" id="redireccion1">
+
+    <!-- Primera Seccion -->
+    <article class="container-fluid d-none d-sm-block" id="redireccion1">
       <div class="row p-5 text-white">
         <h2 class="text-center mb-5">¿Quienes Somos?</h2>
         <div class="col-lg mx-lg-5 mb-4 mb-lg-0 customicon">
@@ -106,6 +113,7 @@
     </article>
 
 
+    <!-- Segunda Seccion -->
 
     <article class="container-fluid " id="redireccion2">
       <div class="row p-3 text-white justify-content-around pb-5">
@@ -163,9 +171,10 @@
 
   </main>
 
+  <!-- Formulario para mensaje -->
   <form class="container-fluid p-5 col-12 justify-content-center" id="redireccion3">
     <div class="container-fluid d-flex justify-content-center align-items-center">
-      <div class="col-lg-12 col-md-8 col-sm-10 col-12 p-5">
+      <div class="col-lg-10 col-md-8 col-sm-10 col-12">
           <h2 class="text-center mb-4 text-white">CONTACTO</h2>
           <form>
               <div class="form-group">
@@ -181,22 +190,26 @@
                   <textarea class="form-control" id="message" rows="3" placeholder=""></textarea>
               </div>
               <div>
-                  <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                  <button type="submit" class="btn btn-primary mt-3" id="send">Enviar</button>
               </div>
           </form>
       </div>
   </div>
   </form>
 
-  <footer class="container p-5 d-flex justify-content-between align-items-center">
+  <!-- Footer -->
+  <footer class="container-fluid p-5 d-flex justify-content-between align-items-center">
     <h2 class="mb-0">VIAJES CHILE</h2>
     <div>
-        <i class="fab fa-github fa-2x mx-2"></i>
-        <i class="fab fa-linkedin fa-2x mx-2"></i>
-        <i class="fab fa-twitter-square fa-2x mx-2"></i>
-        <i class="fab fa-facebook fa-2x mx-2"></i>
+      <a href="https://github.com/" target="_blank" class="links"><i class="fab fa-github fa-2x mx-2"></i></a>
+      <a href="https://www.linkedin.com/" target="_blank" class="links"><i class="fab fa-linkedin fa-2x mx-2"></i></a>
+      <a href="https://x.com/?lang=es" target="_blank" class="links"> <i class="fab fa-twitter-square fa-2x mx-2"></i></a>
+      <a href="https://www.facebook.com" target="_blank" class="links"><i class="fab fa-facebook fa-2x mx-2"></i></a>
     </div>
 </footer>
+
+
+<!-- Seccion Script Bootstrap y JS -->
 
   <script src="assets/js/app.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
