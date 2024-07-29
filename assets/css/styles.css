@@ -28,7 +28,7 @@ label, .links{
     color: #ffff;
 }
 
-#send ,footer{
+#send ,footer, .card-body{
     background-color: #39BEE4;
     color: #ffff;
 }
